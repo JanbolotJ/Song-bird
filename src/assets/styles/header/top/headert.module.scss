@@ -1,0 +1,20 @@
+
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 120px;
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    h5 {
+        color: whitesmoke;
+        font-size: 20px;
+    }
+}

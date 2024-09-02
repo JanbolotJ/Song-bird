@@ -1,0 +1,49 @@
+
+
+.audio_player {
+    display: flex;
+    align-items: center;
+
+    .player_controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ppbutton {
+            margin-top: 10px;
+        }
+
+        .timebar {
+            width: 100%;
+            cursor: pointer;
+
+            .progress {
+                background-color: #ddd;
+                border-radius: 5px;
+                overflow: hidden;
+
+                .progress_bar {
+                    background-color: red;
+                    height: 8px;
+                }
+            }
+
+            .timebar_circle {
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-color: #007bff;
+                border-radius: 50%;
+                transform: translateX(-50%);
+                top: -3px;
+            }
+        }
+    }
+
+    .time_info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 5px;
+    }
+}

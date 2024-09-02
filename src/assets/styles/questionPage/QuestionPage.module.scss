@@ -1,0 +1,47 @@
+
+.answers {
+    .navbar {
+        width: 50%;
+        margin: 30px 30px auto 0px;
+        background-color: rgb(44, 42, 42);
+        
+    
+        .quest {
+            color: white;
+            display: flex;
+            padding: 10px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid rgb(68, 65, 65);
+            
+            &:hover {
+                background-color: rgb(32, 150, 32);
+            }
+        }
+    }
+
+    .correct {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 8px 0;
+        background-color: rgba(0, 128, 0, 0.616);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+
+        &:hover {
+            background-color: rgb(32, 150, 32);
+        }
+    }
+    .dcorrect {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 8px 0;
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
+        border-radius: 5px;
+        width: 100%;
+    }
+}

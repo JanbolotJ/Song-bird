@@ -1,0 +1,16 @@
+
+
+.species {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.774);
+    li {
+        background-color: rgba(0, 128, 0, 0.616);
+        
+        padding: 8px 2.6%;
+        border-radius: 5px;
+    }
+}
