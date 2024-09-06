@@ -3,7 +3,7 @@
 import React from 'react'
 import QuestionPage from './QuestionPage'
 
-export default function Answers({goto, correct}) {
+export default function Answers({goto, correct, info, audio, photo}) {
   return (
     <React.Fragment>
         <QuestionPage 
@@ -17,6 +17,9 @@ export default function Answers({goto, correct}) {
                 'Страус',
                 'Белая сова'
             ]}
+            inform={info}
+            audio={audio}
+            birds={photo}
         />
     </React.Fragment>
   )

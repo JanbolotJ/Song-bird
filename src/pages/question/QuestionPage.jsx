@@ -5,17 +5,19 @@ import { useDispatch } from 'react-redux'
 import { addPoints, subtractPoint } from '../../redux/ScoreSlice';
 import cls from "../../assets/styles/questionPage/QuestionPage.module.scss";
 import { useNavigate } from 'react-router-dom';
+import { Components } from '../../components';
 
-export default function QuestionPage({correctAnswer, answers, nextRoute}) {
+export default function QuestionPage({correctAnswer, answers, nextRoute, audio, birds, inform}) {
   const dispatch = useDispatch();
   const [attempts, setAttempts] = useState(0);
-  // const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [isAnsweredCorrectly, setIsAnsweredCorrectly] = useState(false);
   const navigate = useNavigate();
 
 
   const handleAnswerClick = (answer) => {
-    // setSelectedAnswer(answer)
+    setSelectedAnswer(answer)
+
     
     if (answer === correctAnswer) {
       setIsAnsweredCorrectly(true)
@@ -43,7 +45,8 @@ export default function QuestionPage({correctAnswer, answers, nextRoute}) {
   }
   return (
     <div className={cls.answers}>
-      <div className={cls.navbar}>
+      <div className={cls.main}>
+        <div className={cls.navbar}>
           {answers.map((answer, index) =>(
               <label key={index} className={cls.quest}>
                 <input 
@@ -57,6 +60,15 @@ export default function QuestionPage({correctAnswer, answers, nextRoute}) {
                 <span>{answer}</span>
               </label>  
           ))}
+        </div>
+        {selectedAnswer === correctAnswer ? (
+          <div className={cls.info}>
+              <Components.InfoPlayer src={audio} bird={birds} name={selectedAnswer} info={inform}/>
+          </div>
+        ): (
+          <p className={cls.nt}>this is not thrue</p>
+        )}
+
       </div>
 
       <button

@@ -12,7 +12,13 @@ export default function hishnye() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/quiz/morskie"} correct={"Белая сова"}/>  
+      <Answers
+       goto={"/quiz/morskie"} 
+       correct={"Белая сова"}
+       info={<p>this is info</p>}
+       audio={Audio}
+       photo={Logo}
+      />  
     </React.Fragment>
   )
 }

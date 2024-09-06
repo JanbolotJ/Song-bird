@@ -1,22 +1,37 @@
 
 .answers {
-    .navbar {
-        width: 50%;
-        margin: 30px 30px auto 0px;
-        background-color: rgb(44, 42, 42);
-        
     
-        .quest {
-            color: white;
-            display: flex;
-            padding: 10px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            border: 2px solid rgb(68, 65, 65);
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .nt {
+            color: whitesmoke;
+        }
+        .navbar {
+            width: 45%;
+            margin: 30px 30px auto 0px;
+            background-color: rgb(44, 42, 42);
             
-            &:hover {
-                background-color: rgb(32, 150, 32);
+        
+            .quest {
+                color: white;
+                display: flex;
+                padding: 10px 12px;
+                border-radius: 5px;
+                cursor: pointer;
+                border: 2px solid rgb(68, 65, 65);
+                
+                &:hover {
+                    background-color: rgb(32, 150, 32);
+                }
             }
+        }
+
+        .info {
+            width: 55%;
+            margin: 30px 30px auto 0px;
         }
     }
 

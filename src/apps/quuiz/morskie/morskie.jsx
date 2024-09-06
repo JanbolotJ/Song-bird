@@ -12,7 +12,13 @@ export default function morskie() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/results"} correct={"Морская чайка"}/>
+      <Answers 
+        goto={"/results"} 
+        correct={"Морская чайка"}
+        info={<p>this is info</p>}
+        audio={Audio}
+        photo={Logo}
+      />
     </React.Fragment>
   )
 }

@@ -12,7 +12,13 @@ export default function razminka() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/quiz/vorobinye"} correct={"Страус"}/>
+      <Answers
+       goto={"/quiz/vorobinye"} 
+       correct={"Страус"} 
+       info={<p>this is info for straus</p>}
+       audio={Audio}
+       photo={Logo}
+      />
     </React.Fragment>
   )
 }

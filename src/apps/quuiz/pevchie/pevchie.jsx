@@ -12,7 +12,13 @@ export default function pevchie() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/quiz/hishnye"} correct={"Кукушка"}/>
+      <Answers 
+        goto={"/quiz/hishnye"} 
+        correct={"Кукушка"}
+        info={<p>this is info</p>}
+        audio={Audio}
+        photo={Logo}
+      />
     </React.Fragment>
   )
 }

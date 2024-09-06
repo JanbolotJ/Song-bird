@@ -12,7 +12,13 @@ export default function lesnye() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/quiz/pevchie"} correct={"Зеленая пересмешка"}/>
+      <Answers 
+        goto={"/quiz/pevchie"} 
+        correct={"Зеленая пересмешка"}
+        info={<p>this is info</p>}
+        audio={Audio}
+        photo={Logo}
+      />
     </React.Fragment>
   )
 }

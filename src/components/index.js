@@ -7,6 +7,7 @@ import Start from "./start/Start";
 import BirdsPhoto from "./image/birdsPhoto/BirdsPhoto";
 import AudioPlayer from "./AudioPlayer/AudioPlayer";
 import Results from "./results/Results";
+import InfoPlayer from "./information/InfoPlayer";
 
 export const Components = {
     Container,
@@ -17,5 +18,6 @@ export const Components = {
     Start,
     BirdsPhoto,
     AudioPlayer,
-    Results   
+    Results,
+    InfoPlayer
 }

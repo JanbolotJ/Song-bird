@@ -12,7 +12,13 @@ export default function vorobinye() {
       <Components.Headertop />
       <Components.Headerbottom />
       <Components.Birdssong audio={Audio} birds={Logo}/>
-      <Answers goto={"/quiz/lesnye"} correct={"Домовой воробей"}/>
+      <Answers 
+        goto={"/quiz/lesnye"} 
+        correct={"Домовой воробей"}
+        info={<p>this is info</p>}
+        audio={Audio}
+        photo={Logo}
+      />
     </React.Fragment>
   )
 }
