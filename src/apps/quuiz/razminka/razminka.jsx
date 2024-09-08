@@ -15,7 +15,7 @@ export default function razminka() {
       <Answers
        goto={"/quiz/vorobinye"} 
        correct={"Страус"} 
-       info={<p>this is info for straus</p>}
+       info={<p>this is info about straus</p>}
        audio={Audio}
        photo={Logo}
       />

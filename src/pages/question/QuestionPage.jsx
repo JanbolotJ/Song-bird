@@ -66,7 +66,7 @@ export default function QuestionPage({correctAnswer, answers, nextRoute, audio, 
               <Components.InfoPlayer src={audio} bird={birds} name={selectedAnswer} info={inform}/>
           </div>
         ): (
-          <p className={cls.nt}>this is not thrue</p>
+          <p className={cls.nt}>this is not true</p>
         )}
 
       </div>
