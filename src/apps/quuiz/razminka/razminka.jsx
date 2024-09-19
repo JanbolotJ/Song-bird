@@ -11,11 +11,16 @@ export default function razminka() {
     <React.Fragment>
       <Components.Headertop />
       <Components.Headerbottom />
-      <Components.Birdssong audio={Audio} birds={Logo}/>
+      <Components.Birdssong
+       audio={Audio} 
+       birds={Logo} 
+       name={"Страус"}/>
       <Answers
        goto={"/quiz/vorobinye"} 
        correct={"Страус"} 
-       info={<p>this is info about straus</p>}
+       info={<p> 
+        Страусы — это огромные нелетающие птицы, которые живут в Африке. Они известны своим быстрым бегом, так как могут развивать скорость до 70 км/ч, чтобы убегать от хищников. Страусы питаются травой, семенами и мелкими животными. У них длинные ноги и шея, а также большие глаза, которые помогают им хорошо видеть опасность. Самки откладывают самые крупные яйца среди всех птиц. Хотя страусы не летают, они используют свои крылья для равновесия во время бега.</p>
+       }
        audio={Audio}
        photo={Logo}
       />

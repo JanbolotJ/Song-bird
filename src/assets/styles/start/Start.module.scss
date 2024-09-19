@@ -1,23 +1,42 @@
 
 
 .navbar {
-    display: flex;
-    align-items: center;
-    margin-top:100px ;
-    justify-content: center;
-
-    .start {
-        width: 50%;
-        padding: 30px ;
-        background-color: rgba(0, 128, 0, 0.616);
-        cursor: pointer;
-        color: rgba(255, 255, 255, 0.774);
-        font-size: 2em;
-        border: 5px solid rgb(32, 150, 32);
-        border-radius: 9px;
-        transition: .5s;
-        &:hover {
-            background-color: rgb(32, 150, 32);
+    width: 100%;
+    height: auto;
+    background-color: rgb(44, 42, 42);
+    border-radius: 5px;
+    // align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    .gname {
+        display: flex;
+        justify-content: center;
+        color: rgba(0, 255, 157, 0.616);
+        padding-top: 15px;
+    }
+    .about {
+        font-size: 20px;
+        justify-content: center;
+        display: flex;
+        color: whitesmoke;
+        padding-top: 18px;
+        padding: 0 10px;
+    }
+    .handleclick {
+        .start {
+            width: 100%;
+            padding: 20px ;
+            background-color: rgb(14, 129, 66);
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.774);
+            font-size: 2em;
+            border: 5px solid rgba(0, 255, 157, 0.616);
+            border-radius: 9px;
+            transition: .5s;
+            &:hover {
+                background-color: rgba(0, 255, 157, 0.616);
+                scale: 1.05;
+            }
         }
-}
+    }
 }

@@ -3,35 +3,77 @@
     
     .main {
         display: flex;
-        align-items: center;
+        align-items: normal;
         justify-content: space-between;
+
+        @media (max-width:1020px) {
+            flex-direction: column;
+        }
         
         .nt {
             color: whitesmoke;
         }
         .navbar {
+            height: 100%;
             width: 45%;
-            margin: 30px 30px auto 0px;
+            margin: 30px 30px 0 0px;
             background-color: rgb(44, 42, 42);
+
+            @media (max-width:1020px) {
+                width: 100%;
+                margin: 30px 0;
+            }
             
-        
-            .quest {
-                color: white;
+            .listgr {
                 display: flex;
-                padding: 10px 12px;
-                border-radius: 5px;
-                cursor: pointer;
-                border: 2px solid rgb(68, 65, 65);
-                
-                &:hover {
-                    background-color: rgb(32, 150, 32);
+                flex-direction: column;
+
+                .list {
+                    padding: 10px 12px;
+                    cursor: pointer;
+                    border: 1px solid rgb(68, 65, 65);
+                    color: whitesmoke;
+
+                    &:hover {
+                        background-color: rgba(0, 255, 157, 0.616);
+                    }
+
+                    .btn {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: grey;
+                        margin-right: 10px;
+                    }
+                    .true {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: rgb(14, 129, 66);
+                        margin-right: 10px;
+                    }
+                    .false {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: red;
+                        margin-right: 10px;
+                    }
                 }
             }
         }
 
         .info {
             width: 55%;
-            margin: 30px 30px auto 0px;
+            margin: 30px 0px auto 0px;
+
+            @media (max-width:1020px) {
+                width: 100%;
+                
+            }
         }
     }
 
@@ -39,14 +81,15 @@
         margin-top: 20px;
         margin-bottom: 40px;
         padding: 8px 0;
-        background-color: rgba(0, 128, 0, 0.616);
+        background-color: rgb(14, 129, 66);
         color: white;
         cursor: pointer;
         border-radius: 5px;
         width: 100%;
-
+        transition: .5s;
         &:hover {
-            background-color: rgb(32, 150, 32);
+            background-color: rgba(0, 255, 157, 0.616);
+            
         }
     }
     .dcorrect {

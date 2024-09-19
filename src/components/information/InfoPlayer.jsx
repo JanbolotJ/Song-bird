@@ -61,11 +61,12 @@ export default function InfoPlayer({src, bird, name, info}) {
         setProgress(clickPercentage * 100);
     };
   return (
-    <div>
+    <div className={cls.info_bar}>
         <div className={cls.audio_player}>
             <Components.BirdsPhoto src={bird} />
             <div className={cls.flex}>
-                <p className={cls.nt}>{name}</p>
+                <h1 className={cls.name}>{name}</h1>
+                <hr className={cls.hr}/>
                 <div className={cls.navbar}>
                     
                     <img 
@@ -100,15 +101,11 @@ export default function InfoPlayer({src, bird, name, info}) {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p className={cls.nt}>{info}</p>
-                </div>
             </div>
-
-            
-
         </div>
-        
+        <div className={cls.info}>
+            <span className={cls.nt}>{info}</span>
+        </div>
     </div>
   )
 }

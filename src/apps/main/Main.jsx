@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <React.Fragment>
       <Components.Headertop />
-      <Components.Headerbottom />
+      {/* <Components.Headerbottom /> */}
       <Components.Start />
     </React.Fragment>
   )

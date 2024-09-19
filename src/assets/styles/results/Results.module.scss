@@ -19,19 +19,32 @@
         align-items: center;
         margin: 30px;
 
+        @media (max-width:850px) {
+            flex-direction: column; 
+            padding-bottom: 20px;
+        }
+
         button {
             margin: 20px;
             height: 40px;
             padding: 10px 40px;
-            background-color: rgba(0, 128, 0, 0.616);
+            background-color: rgb(14, 129, 66);
             cursor: pointer;
             color: rgba(255, 255, 255, 0.774);
-            border: 2px solid rgb(32, 150, 32);
+            border: 2px solid rgba(0, 255, 157, 0.616);
             border-radius: 5px;
             transition: .5s;
 
+            @media (max-width:850px) {
+                width: 100%;
+                margin: 5px 0;
+            }
+            @media (max-width:450px) {
+                height: 60px;
+            }
+
             &:hover {
-                background-color: rgb(32, 150, 32);
+                background-color: rgba(0, 255, 157, 0.616);
             }
         }
     }

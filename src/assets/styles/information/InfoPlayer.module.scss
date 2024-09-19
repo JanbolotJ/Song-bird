@@ -2,75 +2,108 @@
 
 
 
-.audio_player {
+.info_bar {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background-color: rgb(44, 42, 42);
     border-radius: 10px;
-
-    .nt {
+    padding-top: 10px;
+    .info {
+        margin:10px;
         color: whitesmoke;
     }
-
-    .flex {
+    .audio_player {
         display: flex;
-        flex-direction: column;
-        .navbar {
+        align-items: center;
 
-            .ppbutton {
-                margin-bottom: 25px;
-                width: 40px;
-                height: 40px;
-                object-fit: cover;
+        @media (max-width:1020px) {
+            flex-direction: column;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .name {
+                color: whitesmoke;
+                font-weight: 40;
+            }
+            .hr {
+                border: none;
+                width: 96%;
+                margin-right: 6%;
+                height: 1px;
+                background: linear-gradient(to left, rgb(85, 85, 85), grey);
+                margin-top: 0;
+                margin-bottom: 20px;
             }
 
-
-            .player_controls {
+            .navbar {
+                width: 100%;
                 display: flex;
-                flex-direction: column;
                 align-items: center;
 
+                .ppbutton {
+                    background-size: contain;
+                    mix-blend-mode: multiply;
+                    margin-bottom: 25px;
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                }
 
-                .timebar {
-                    position: relative;
-                    width: 170px;    
-                    height: 10px;
-                    background-color: #ddd;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    margin: 10px 0;
 
-                    .progress {
+                .player_controls {
+                    margin: 0 20px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    .timebar {
+                        position: relative;
+                        width: 100%;    
+                        height: 5px;
                         background-color: #ddd;
                         border-radius: 5px;
-                        overflow: hidden;
+                        cursor: pointer;
 
-                        .progress_bar {
-                            background-color: rgba(0, 128, 0, 0.616);
-                            height: 10px;
+                        .progress {
+                            background-color: rgb(126, 124, 124);
+                            border-radius: 5px;
+                            overflow: hidden;
+
+                            .progress_bar {
+                                background: linear-gradient(to right,
+                                rgba(0, 255, 157, 0.616),
+                                rgb(14, 129, 66));
+                                height: 5px;
+                            }
+                        }
+
+                        .timebar_circle {
+
+                            position: absolute;
+                            top: -3px;
+                            width: 12px;
+                            height: 12px;
+                            background-color: grey;
+                            border-radius: 50%;
+                            transform: translateX(-50%);
+                            transition: left 0.1s ease;
                         }
                     }
-
-                    .timebar_circle {
-                        position: absolute;
-                        top: -3px;
-                        width: 15px;
-                        height: 15px;
-                        background-color: #007bff;
-                        border-radius: 50%;
-                        transform: translateX(-50%);
-                        transition: left 0.1s ease;
+                    .time_info {
+                        color: rgb(85, 85, 85);
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        margin-top: 5px;
                     }
-                }
-                .time_info {
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    margin-top: 5px;
                 }
             }
         }
     }
-
-    
 }

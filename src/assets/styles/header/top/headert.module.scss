@@ -8,13 +8,23 @@
     justify-content: space-between;
 
     img {
+        filter: drop-shadow(1px 5px 5px rgb(14, 129, 39));
+        background: transparent;
         width: 120px;
         height: 120px;
         background-size: contain;
         background-repeat: no-repeat;
+        cursor: pointer;
+        transition: .5s;
+
+        &:hover {
+            scale: 1.2;
+        }
     }
     h5 {
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 40;
+        margin-bottom: 5px;
     }
 }
